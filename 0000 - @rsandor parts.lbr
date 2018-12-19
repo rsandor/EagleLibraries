@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -648,18 +648,18 @@
 <text x="-12.3" y="10.26" size="1.27" layer="21">ACD8143</text>
 </package>
 <package name="PEC11-FS">
-<pad name="A" x="-2.4892" y="-7.493" drill="1" diameter="1.6764"/>
-<pad name="C" x="0" y="-7.493" drill="1" diameter="1.6764"/>
-<pad name="B" x="2.4892" y="-7.493" drill="1" diameter="1.6764"/>
-<pad name="S1" x="-2.5" y="7.0104" drill="1" diameter="1.6764" rot="R180"/>
-<pad name="S2" x="2.5" y="7.0104" drill="1" diameter="1.6764"/>
+<pad name="A" x="-2.4892" y="-7.493" drill="1" diameter="1.85"/>
+<pad name="C" x="0" y="-7.493" drill="1" diameter="1.85"/>
+<pad name="B" x="2.4892" y="-7.493" drill="1" diameter="1.85"/>
+<pad name="S1" x="-2.5" y="7.0104" drill="1" diameter="1.85" rot="R180"/>
+<pad name="S2" x="2.5" y="7.0104" drill="1" diameter="1.85"/>
 <wire x1="6.3" y1="-6.604" x2="6.3" y2="6.604" width="0.254" layer="21"/>
 <wire x1="6.3" y1="6.604" x2="-6.2" y2="6.604" width="0.254" layer="21"/>
 <wire x1="-6.2" y1="6.604" x2="-6.2" y2="-6.604" width="0.254" layer="21"/>
 <wire x1="-6.2" y1="-6.604" x2="6.3" y2="-6.604" width="0.254" layer="21"/>
 <circle x="0" y="0" radius="2.9972" width="0.254" layer="21"/>
 <wire x1="-2.286" y1="-1.9304" x2="2.286" y2="-1.9304" width="0.254" layer="21"/>
-<text x="-8.128" y="0" size="1.016" layer="27" font="vector" rot="R90" align="center">PEC11-FS</text>
+<text x="0" y="9.652" size="1.016" layer="25" font="vector" rot="R180" align="center">&gt;NAME</text>
 <circle x="-4.826" y="5.207" radius="0.508" width="0.254" layer="21"/>
 <circle x="4.826" y="5.207" radius="0.508" width="0.254" layer="21"/>
 <circle x="-4.826" y="-5.207" radius="0.508" width="0.254" layer="21"/>
@@ -672,10 +672,13 @@
 <wire x1="4.8006" y1="1.2954" x2="4.8006" y2="-1.2954" width="0.2032" layer="46"/>
 <wire x1="4.8006" y1="1.2954" x2="6.604" y2="1.2954" width="0.2032" layer="46"/>
 <wire x1="4.8006" y1="-1.2954" x2="6.604" y2="-1.2954" width="0.2032" layer="46"/>
-<rectangle x1="-6.858" y1="-1.524" x2="-4.5466" y2="1.524" layer="40"/>
-<rectangle x1="-6.858" y1="-1.524" x2="-4.5466" y2="1.524" layer="39"/>
-<rectangle x1="4.572" y1="-1.524" x2="6.8834" y2="1.524" layer="39"/>
-<rectangle x1="4.572" y1="-1.524" x2="6.8834" y2="1.524" layer="40"/>
+<rectangle x1="-7.493" y1="-2.159" x2="-3.9116" y2="2.159" layer="43"/>
+<rectangle x1="3.937" y1="-2.159" x2="7.5184" y2="2.159" layer="43"/>
+<text x="0" y="-10.668" size="1.016" layer="27" font="vector" rot="R180" align="center">&gt;VALUE</text>
+<rectangle x1="-7.493" y1="-2.159" x2="-3.9116" y2="2.159" layer="41"/>
+<rectangle x1="-7.493" y1="-2.159" x2="-3.9116" y2="2.159" layer="42"/>
+<rectangle x1="3.937" y1="-2.159" x2="7.5184" y2="2.159" layer="41"/>
+<rectangle x1="3.937" y1="-2.159" x2="7.5184" y2="2.159" layer="42"/>
 </package>
 <package name="LTC-4724JR">
 <pad name="C1" x="-6.35" y="-5.08" drill="0.75" diameter="1.4224" shape="square"/>
@@ -1567,6 +1570,41 @@ CS Schukat</description>
 <vertex x="3.855" y="-10.23"/>
 </polygon>
 </package>
+<package name="3528-LED">
+<smd name="C" x="-1.55" y="0" dx="2.6" dy="1.5" layer="1" rot="R90"/>
+<smd name="A" x="1.55" y="0" dx="2.6" dy="1.5" layer="1" rot="R90"/>
+<wire x1="-1.75" y1="1.4" x2="1.75" y2="1.4" width="0.127" layer="21"/>
+<wire x1="1.75" y1="1.4" x2="1.75" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="1.75" y1="-1.4" x2="-1.75" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-1.4" x2="-1.75" y2="1.4" width="0.127" layer="21"/>
+<text x="-1.27" y="1.97" size="0.6096" layer="21" font="vector" align="center">-</text>
+<text x="-2.97" y="-0.07" size="0.6096" layer="25" font="vector" rot="R90" align="center">&gt;NAME</text>
+<text x="2.93" y="0.03" size="0.6096" layer="27" font="vector" rot="R90" align="center">&gt;VALUE</text>
+</package>
+<package name="CD-SYMBOL">
+<wire x1="0.635" y1="-0.381" x2="0.635" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.016" x2="0.889" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="0.889" y1="-1.016" x2="1.016" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.889" x2="1.016" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.508" x2="0.889" y2="-0.381" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-0.381" x2="0.889" y2="-0.381" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="0.381" x2="-0.762" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="0.508" x2="-0.762" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="0.889" x2="-0.635" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.016" x2="-0.381" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="0.381" x2="-0.381" y2="0.381" width="0.1524" layer="21"/>
+<polygon width="0.1524" layer="21">
+<vertex x="1.397" y="0"/>
+<vertex x="0.127" y="0"/>
+<vertex x="0.127" y="1.27"/>
+</polygon>
+<polygon width="0.1524" layer="21">
+<vertex x="-1.143" y="0"/>
+<vertex x="0.127" y="0"/>
+<vertex x="0.127" y="-1.27"/>
+</polygon>
+<circle x="0.127" y="0" radius="1.655875" width="0.1524" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="8301AS">
@@ -2149,7 +2187,7 @@ CS Schukat</description>
 <wire x1="-5.08" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
-<text x="1.27" y="-5.08" size="1.27" layer="94" align="bottom-center">PEC11-FS</text>
+<text x="1.27" y="-5.08" size="1.27" layer="96" align="bottom-center">&gt;VALUE</text>
 <text x="-5.08" y="10.16" size="1.27" layer="95" align="top-left">&gt;NAME</text>
 </symbol>
 <symbol name="HDSP-433G">
@@ -2779,6 +2817,30 @@ Allows current flow in one direction, but allows reverse flow when above breakdo
 <text x="0" y="-48.26" size="2.54" layer="94" font="vector" ratio="13" align="top-center">Famicom Cart Port</text>
 <text x="-15.24" y="53.34" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="CD-SYMBOL">
+<polygon width="0.6096" layer="94">
+<vertex x="0" y="0"/>
+<vertex x="0" y="5.08"/>
+<vertex x="5.08" y="0"/>
+</polygon>
+<polygon width="0.6096" layer="94">
+<vertex x="0" y="0"/>
+<vertex x="-5.08" y="0"/>
+<vertex x="0" y="-5.08"/>
+</polygon>
+<circle x="0" y="0" radius="6.868575" width="0.6096" layer="94"/>
+<wire x1="-1.905" y1="1.27" x2="-3.175" y2="1.27" width="0.6096" layer="94"/>
+<wire x1="-3.175" y1="1.27" x2="-3.81" y2="1.905" width="0.6096" layer="94"/>
+<wire x1="-3.81" y1="1.905" x2="-3.81" y2="3.81" width="0.6096" layer="94"/>
+<wire x1="-3.81" y1="3.81" x2="-3.175" y2="4.445" width="0.6096" layer="94"/>
+<wire x1="-3.175" y1="4.445" x2="-1.905" y2="4.445" width="0.6096" layer="94"/>
+<wire x1="1.905" y1="-1.27" x2="1.905" y2="-4.445" width="0.6096" layer="94"/>
+<wire x1="1.905" y1="-4.445" x2="3.175" y2="-4.445" width="0.6096" layer="94"/>
+<wire x1="3.175" y1="-4.445" x2="3.81" y2="-3.81" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-3.81" x2="3.81" y2="-1.905" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-1.905" x2="3.175" y2="-1.27" width="0.6096" layer="94"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.6096" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="8301AS">
@@ -3249,6 +3311,34 @@ With round pins</description>
 <connect gate="P1" pin="VCC1" pad="30"/>
 <connect gate="P1" pin="VCC2" pad="31"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED-SMD-IN-P32AT" uservalue="yes">
+<gates>
+<gate name="LED" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3528-LED">
+<connects>
+<connect gate="LED" pin="A" pad="A"/>
+<connect gate="LED" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CD-SYMBOL">
+<gates>
+<gate name="G$1" symbol="CD-SYMBOL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CD-SYMBOL">
 <technologies>
 <technology name=""/>
 </technologies>
